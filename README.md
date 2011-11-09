@@ -39,3 +39,10 @@ Popcorn.vimeo(
   // And, we'll finally play out this example code.
   .play()
 ```
+
+
+And, the example HTML would look like the following...
+
+    <div id="video" style="width: 360px; height: 300px;"></div>
+    <div id="gist-container"></div>
+    <div class="iframe-div"></div>
