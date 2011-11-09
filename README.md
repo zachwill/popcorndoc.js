@@ -43,6 +43,10 @@ Popcorn.vimeo(
 
 And, the example HTML would look like the following...
 
-    <div id="video" style="width: 360px; height: 300px;"></div>
-    <div id="gist-container"></div>
-    <div class="iframe-div"></div>
+```html
+<body>
+  <div id="video" style="width: 360px; height: 300px;"></div>
+  <div id="gist-container"></div>
+  <div class="iframe-div"></div>
+</body>
+```
