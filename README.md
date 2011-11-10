@@ -44,9 +44,21 @@ Popcorn.vimeo(
 And, the example HTML would look like the following...
 
 ```html
+<!doctype html>
+<html>
+<head>
+  <style type="text/css">
+    #video{ height: 300px; width: 360px; }
+    #gist-container{ height: 600px; width: 600px; }
+    #iframe-div{ height: 400px; width: 600px; }
+  </style>
+</head>
 <body>
-  <div id="video" style="width: 360px; height: 300px;"></div>
+
+  <div id="video"></div>
   <div id="gist-container"></div>
   <div class="iframe-div"></div>
+
 </body>
+</html>
 ```
