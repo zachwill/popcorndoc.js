@@ -11,7 +11,7 @@ Popcorn.vimeo(
 )
   // And we'll begin documenting some Gist code.
   .popcorndoc({
-    start: 0,  // Seconds to start -- so at beginning of video
+    start: 0.1,  // Seconds to start -- so at the beginning of video
     end: 10,   // Seconds to end -- so at 0:10 mark of video
     lines: '2,15,18-25',  // Lines to highlight in the Gist
     target: 'gist-container',  // DIV to load Gist in
@@ -40,25 +40,11 @@ Popcorn.vimeo(
   .play()
 ```
 
+There's also an `example.html` file that you can take a look at by
+running the following from the command-line:
 
-And, the example HTML would look like the following...
+     $ cd path/to/this/repo
+     $ python -m SimpleHTTPServer
 
-```html
-<!doctype html>
-<html>
-<head>
-  <style type="text/css">
-    #video{ height: 300px; width: 360px; }
-    #gist-container{ height: 600px; width: 600px; }
-    #iframe-div{ height: 400px; width: 600px; }
-  </style>
-</head>
-<body>
-
-  <div id="video"></div>
-  <div id="gist-container"></div>
-  <div class="iframe-div"></div>
-
-</body>
-</html>
-```
+Then visit `http://localhost:8000/example.html` in your web browser of
+choice.
