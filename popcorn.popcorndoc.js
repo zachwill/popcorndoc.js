@@ -193,7 +193,6 @@ document.write(b);a.order==null?f.push(a):f.splice(a.order,0,a)}else{a.defer=!0;
       unhighlight();
 
       if (options.runIn) {
-        console.log('runIn start');
         if (iframe) {
           cleanUp(iframe);
         }
