@@ -46,5 +46,5 @@ running the following from the command-line:
      $ cd path/to/this/repo
      $ python -m SimpleHTTPServer
 
-Then visit `http://localhost:8000/example.html` in your web browser of
-choice.
+Then visit [`http://localhost:8000/example.html`](http://localhost:8000/example.html)
+in your web browser of choice.
