@@ -10,15 +10,44 @@
   <title>A Popcorn.js Example</title>
 
   <meta name="author" content="Zach Williams, hey AT zachwill DOT com">
-  <meta name="viewport" content="width=980">
+  <meta name="viewport" content="width=1200">
 
   <!-- HTML5 shim, for IE 6-8 support of HTML elements -->
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+
+  <style type="text/css">
+    body{
+      color: #222;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    }
+    h1{
+      text-align: center;
+      margin: 15px 0;
+    }
+    #main{
+      clear: both;
+      margin: 75px auto 0;
+      width: 1150px;
+    }
+    #video{
+      float: left;
+      margin-right: 15px;
+      width: 560px;
+    }
+    #gist, .gist{
+      float: left;
+      width: 560px;
+    }
+  </style>
 </head>
 
 <body>
+
+  <header>
+    <h1>A Popcorn.js Example</h1>
+  </header>
 
   <div id="main" role="main">
 
@@ -40,6 +69,12 @@
       'http://player.vimeo.com/video/31356476'
     ).popcorndoc({
       start: .1,
+      end: 2,
+      lines: '1',
+      target: 'gist',
+      gist: '1340462'
+    }).popcorndoc({
+      start: 2,
       end: 5,
       lines: '2,3',
       target: 'gist',
@@ -50,6 +85,11 @@
       lines: '5',
       target: 'gist',
       gist: '1340462'
+    }).popcorndoc({
+      start: 10,
+      end: 12.5,
+      lines: '6',
+      target: 'gist'
     }).play()
 
   </script>
