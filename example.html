@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>A Popcorn.js Example</title>
+
+  <meta name="author" content="Zach Williams, hey AT zachwill DOT com">
+  <meta name="viewport" content="width=980">
+
+  <!-- HTML5 shim, for IE 6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div id="main" role="main">
+
+    <div id="video"></div>
+    <div id="gist"></div>
+
+  </div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js" type="text/javascript"></script>
+  <script src="popcorn.popcorndoc.js" type="text/javascript"></script>
+
+  <!-- Example JS -->
+  <script type="text/javascript">
+
+    Popcorn.vimeo(
+      '#video',
+      'http://player.vimeo.com/video/31356476'
+    ).popcorndoc({
+      start: .1,
+      end: 5,
+      lines: '2,3',
+      target: 'gist',
+      gist: '1340462'
+    }).popcorndoc({
+      start: 5,
+      end: 10,
+      lines: '5',
+      target: 'gist',
+      gist: '1340462'
+    }).play()
+
+  </script>
+
+
+  <!-- Prompt IE 6-7 users to install Chrome Frame.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lte IE 7 ]>
+    <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
